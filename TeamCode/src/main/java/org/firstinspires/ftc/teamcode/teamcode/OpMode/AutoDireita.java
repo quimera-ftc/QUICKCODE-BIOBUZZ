@@ -1,11 +1,12 @@
-package org.firstinspires.ftc.teamcode.tests;
+package org.firstinspires.ftc.teamcode.teamcode.OpMode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
-import org.firstinspires.ftc.teamcode.tests.DriveTrainIMU;
+
+import org.firstinspires.ftc.teamcode.teamcode.testsN.DriveTrainIMU;
 
 @Autonomous
-public class OpModeBasico extends LinearOpMode {
+public class AutoDireita extends LinearOpMode {
 
     private DriveTrainIMU drive;
     private static final double tempoTile = 1.5;
@@ -27,7 +28,7 @@ public class OpModeBasico extends LinearOpMode {
                     break;
                 }
 
-                telemetry.addData("Quanto o IMU girou", drive.getRotation());
+                telemetry.addData("quanto o IMU girou", drive.getRotation());
                 telemetry.update();
             }
 
